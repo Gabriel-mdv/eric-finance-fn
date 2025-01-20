@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* track  */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Handle  */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* handle on hover  */
+::-webkit-scrollbar:hover {
+  background: #555;
+}
+
+@layer base {
+  /**
+	 * custom colors variables
+	 */
+  :root {
+    /* add your light color variables here */
+    --primary-main: 0 94 162;
+    --primary-light: 0 140 201;
+    --primary-dark: 24 56 132;
+
+    --secondary-main: 191 23 35;
+    --secondary-light: 255 13 32;
+    --secondary-dark: 180 20 25;
+
+    --background: 252 251 251;
+
+    --highlight: 207 207 207;
+
+    --text-light: 255 255 255;
+    --text-dark: 40 39 42;
+
+    --success: 3 210 99;
+    --error: 255 13 32;
+  }
+
+  .dark {
+    /* add your dark color variables here */
+  }
+
+  /**
+	 * Custom fonts
+	 */
+  @font-face {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/GraphikRegular.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'Graphik';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/fonts/GraphikRegularItalic.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/GraphikMedium.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'Graphik';
+    font-style: italic;
+    font-weight: 500;
+    src: url('/fonts/GraphikMediumItalic.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'Graphik';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/GraphikSemibold.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'Graphik';
+    font-style: italic;
+    font-weight: 600;
+    src: url('/fonts/GraphikSemiboldItalic.otf') format('opentype');
+  }
+}
