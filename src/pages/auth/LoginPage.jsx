@@ -27,7 +27,7 @@ const LoginPage = () => {
               Eric Money
             </Typography>
             <Typography variant="body1">
-            Eric Money is a platform Eric from Code of Africa uses to track his finances. With his permission, you can use it too to improve financial discipline by recording income, expenses, and savings.
+            Eric Money is a platform Eric from Code of Africa uses to track his finances. With his permission, you can use it too to improve financial discipline by recording your income, expenses, and savings.
             </Typography>
           </Box>
         </Box>
