@@ -64,9 +64,10 @@ const CreateTransactionPage = () => {
             render={({ field }) => {
               return (
                 <Select label="Payment Method" disabled={loading} inputProps={{ ...field }}>
+       
                   <MenuItem value="CASH">CASH</MenuItem>
-                  <MenuItem value="MOMO">MOMO</MenuItem>
-                  <MenuItem value="BANK">BANK</MenuItem>
+                  <MenuItem value="MOBILE MONEY">MOMO</MenuItem>
+                  <MenuItem value="BANK ACCOUNT">BANK</MenuItem>
                 </Select>
               );
             }}

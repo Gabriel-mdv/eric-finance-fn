@@ -1,7 +1,7 @@
 import yup from '.';
 
 export const registerFormSchema = yup.object({
-  storeId: yup.string().required(),
+  storeId: yup.string(),
   name: yup.string().required(),
   phone: yup
     .string()

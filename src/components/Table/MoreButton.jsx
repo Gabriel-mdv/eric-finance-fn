@@ -5,11 +5,11 @@ import { FaEye, FaTrash } from 'react-icons/fa';
 import { MdMoreHoriz } from 'react-icons/md';
 import { RiRefund2Line } from 'react-icons/ri';
 import { useNavigate } from 'react-router-dom';
-import DeleteProductModal from '../products/DeleteProductModal';
-import DeleteStoreModal from '../store/DeleteStoreModal';
-import DeleteSaleModal from '../sale/RefundSaleModal';
-import DeleteUserModal from '../user/DeleteUserModal';
-import RefundSaleModal from '../sale/RefundSaleModal';
+// import DeleteProductModal from '../products/DeleteProductModal';
+// import DeleteStoreModal from '../store/DeleteStoreModal';
+// import DeleteSaleModal from '../sale/RefundSaleModal';
+// import DeleteUserModal from '../user/DeleteUserModal';
+// import RefundSaleModal from '../sale/RefundSaleModal';
 
 function MoreButton({ id, model, hasDelete = false, hasRefund = false, hasDetails = true, hasEdit = true, ...props }) {
   const navigate = useNavigate();
@@ -93,17 +93,7 @@ function MoreButton({ id, model, hasDelete = false, hasRefund = false, hasDetail
         )}
       </Menu>
 
-      {hasDelete && [
-        model === 'products' && (
-          <DeleteProductModal key={model} id={id} open={deleteOpen} handleClose={handleCloseDelete} />
-        ),
-        model === 'stores' && (
-          <DeleteStoreModal key={model} id={id} open={deleteOpen} handleClose={handleCloseDelete} />
-        ),
-        model === 'sales' && <DeleteSaleModal key={model} id={id} open={deleteOpen} handleClose={handleCloseDelete} />,
-        model === 'users' && <DeleteUserModal key={model} id={id} open={deleteOpen} handleClose={handleCloseDelete} />,
-      ]}
-      {hasRefund && <RefundSaleModal id={id} open={refundOpen} handleClose={handleCloseRefund} />}
+
     </>
   );
 }

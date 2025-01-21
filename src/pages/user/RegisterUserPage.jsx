@@ -33,7 +33,7 @@ const RegisterUserPage = () => {
       name: '',
       phone: '',
       password: '',
-      storeId: '',
+      // storeId: '',
       email: '',
       location: '',
       gender: 'UNSPECIFIED',
@@ -115,7 +115,7 @@ const RegisterUserPage = () => {
             inputProps={{ ...register('password') }}
           />
         </Grid>
-        <Grid item xs={12} sm={6}>
+        {/* <Grid item xs={12} sm={6}>
           <Controller
             name="storeId"
             control={control}
@@ -145,7 +145,7 @@ const RegisterUserPage = () => {
               );
             }}
           />
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} sm={6}>
           <Input
             label="Email"
