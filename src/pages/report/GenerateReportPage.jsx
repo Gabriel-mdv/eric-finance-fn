@@ -256,8 +256,8 @@ const GeneratePageForm = ({ loading }) => {
                 render={({ field, fieldState: { error } }) => {
                   return (
                     <AutoCompleteInput
-                      label="Store"
-                      placeHolder="Select a store to generate a report or leave empty to generate a report for all stores..."
+                      label="Account used for payment"
+                      placeHolder="--Select account--"
                       error={!!error}
                       helperText={error?.message}
                       required={false}
@@ -278,7 +278,7 @@ const GeneratePageForm = ({ loading }) => {
                 render={({ field, fieldState: { error } }) => {
                   return (
                     <Select
-                      label="Include collected sales and transactions"
+                      label="Include collected transactions"
                       error={!!error}
                       helperText={error?.message}
                       required={false}

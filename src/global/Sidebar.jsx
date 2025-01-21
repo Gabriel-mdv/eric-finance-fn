@@ -121,9 +121,6 @@ const Sidebar = () => {
                 <Typography className="text-primary font-medium" sx={{ color: colors.primary.main }} variant="info1">
                   Role: {capitalize(user.role)}
                 </Typography>
-                <Typography className="text-primary" sx={{ color: colors.primary.main }} variant="info1">
-                  Store: {capitalize(user.store.name)}
-                </Typography>
               </Box>
             </Box>
           )}
