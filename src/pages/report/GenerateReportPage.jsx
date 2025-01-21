@@ -98,7 +98,7 @@ const GenerateReportPage = () => {
   useEffect(() => {
     dispatch(getAllStoresAction()).then(({ error }) => {
       setinitLoading(false);
-      if (error) toast.error('Failed to load stores');
+      // if (error) toast.error('Failed to load stores');
     });
   }, [dispatch]);
   useEffect(() => {
