@@ -148,7 +148,7 @@ function AnalyticsPage() {
 
     dispatch(getAnalytics({ from: from.toISOString(), to: to.toISOString() })).then(({ error }) => {
       setInitLoading(false);
-      if (error) toast.error(error.message);
+      // if (error) toast.error(error.message);
     });
   }, [dispatch, user, dateRange]);
 
